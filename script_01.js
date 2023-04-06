@@ -37,8 +37,16 @@
 // }
 
 // Inkrement (var. Schrittweite)
-for (let i = 50; i <= 100; i+=5) {
+// for (let i = 50; i <= 100; i+=5) {
+//     output("index i: " + i);
+// }
+
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) {
     output("index i: " + i);
+    output(arr[i]);
 }
 
 
