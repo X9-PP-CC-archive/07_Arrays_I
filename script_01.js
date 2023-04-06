@@ -79,11 +79,11 @@ hier: Aufsummierung
 Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
-let str = ""; // Anfangswert
-for (let i = 0; i < 4; i++) {
-   str += "Test";
-   output("inhalt von str: " + str);
-}
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 4; i++) {
+//    str += "Test";
+//    output("inhalt von str: " + str);
+// }
 
 
 /**
@@ -133,26 +133,21 @@ function getSentenceArr(arr) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
-    // let str =   arr[0] + GAP +
-    //             arr[1] + GAP +
-    //             arr[2] + GAP +
-    //             arr[3] + GAP +
-    //             arr[4] + GAP +
-    //             arr[5] + 
-    //             PUNCT;
-
-    // return str;
+    let str = ""; 
 
     for (let i = 0; i < arr.length; i++) {
-        output(arr[i]);
+        if (i == arr.length-1) {
+            str += arr[i] + PUNCT; 
+        } else {
+            str += arr[i] + GAP;
+        }
     }
-
-
-
+    
+     return str;
 
 }
 
